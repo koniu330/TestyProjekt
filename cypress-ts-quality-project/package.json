@@ -1,0 +1,17 @@
+{
+  "name": "cypress-typescript-automationexercise-project",
+  "version": "1.0.0",
+  "description": "Projekt zaliczeniowy z testów i kontroli jakości oprogramowania - Cypress + TypeScript",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test:headless": "cypress run --browser chrome --headless",
+    "test:headless:electron": "cypress run --browser electron --headless",
+    "clean:reports": "node scripts/clean-reports.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "cypress": "^13.13.0",
+    "typescript": "^5.5.3"
+  }
+}

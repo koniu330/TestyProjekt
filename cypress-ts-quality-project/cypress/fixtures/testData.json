@@ -1,0 +1,18 @@
+{
+  "registeredUser": {
+    "name": "Student QA",
+    "email": "student.qa.demo@test.com",
+    "password": "Test12345!"
+  },
+  "product": {
+    "id": 1,
+    "name": "Blue Top",
+    "quantity": 3
+  },
+  "contactMessage": {
+    "name": "Tester Cypress",
+    "email": "tester@example.com",
+    "subject": "Feedback testowy",
+    "message": "To jest automatyczna wiadomosc testowa wyslana w projekcie zaliczeniowym."
+  }
+}
