@@ -4,10 +4,10 @@ import type { ContactMessage } from '../support/types'
 describe('Formularz kontaktowy', () => {
   it('11. Wysyła formularz Contact Us i sprawdza komunikat sukcesu', () => {
     const message: ContactMessage = {
-      name: 'Tester Cypress',
-      email: 'tester@example.com',
-      subject: 'Feedback testowy',
-      message: 'To jest automatyczna wiadomosc testowa wyslana w projekcie zaliczeniowym.'
+      name: 'Tester ',
+      email: 'tej@gmail.com',
+      subject: 'Tej ',
+      message: 'Ala ma kota '
     }
 
     cy.on('window:alert', (alertText) => {

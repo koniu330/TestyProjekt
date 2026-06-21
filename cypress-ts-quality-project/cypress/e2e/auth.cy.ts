@@ -3,8 +3,8 @@ import { navSelectors } from '../selectors/navigation.selectors'
 import type { User } from '../support/types'
 
 const uniqueUser = (): User => ({
-  name: 'Student QA',
-  email: `student.qa.${Date.now()}@example.com`,
+  name: 'Test',
+  email: 'tej12345@gmail.com',
   password: 'Test12345!'
 })
 
@@ -38,8 +38,8 @@ describe('Autoryzacja użytkownika', () => {
   it('03. Wyświetla komunikat błędu przy błędnym logowaniu', () => {
     const invalidUser: User = {
       name: 'Niepoprawny Tester',
-      email: `wrong.${Date.now()}@example.com`,
-      password: 'wrong-password'
+      email: `zly.${Date.now()}@gmail.com`,
+      password: 'zlehaslo'
     }
 
     cy.loginUser(invalidUser)

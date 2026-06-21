@@ -1,7 +1,10 @@
+
+
+
 {
   "registeredUser": {
-    "name": "Student QA",
-    "email": "student.qa.demo@test.com",
+    "name": "Test",
+    "email": "tej@gmail.com",
     "password": "Test12345!"
   },
   "product": {
@@ -10,9 +13,9 @@
     "quantity": 3
   },
   "contactMessage": {
-    "name": "Tester Cypress",
-    "email": "tester@example.com",
-    "subject": "Feedback testowy",
-    "message": "To jest automatyczna wiadomosc testowa wyslana w projekcie zaliczeniowym."
+    "name": "Tester ",
+    "email": "tej@gmail.com",
+    "subject": "Tej ",
+    "message": "Ala ma kota "
   }
 }

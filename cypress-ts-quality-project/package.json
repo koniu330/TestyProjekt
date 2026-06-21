@@ -1,7 +1,7 @@
 {
   "name": "cypress-typescript-automationexercise-project",
   "version": "1.0.0",
-  "description": "Projekt zaliczeniowy z testów i kontroli jakości oprogramowania - Cypress + TypeScript",
+  "description": "Projekt zaliczeniowy",
   "scripts": {
     "cy:open": "cypress open",
     "cy:run": "cypress run",

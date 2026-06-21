@@ -1,23 +1,17 @@
-# Projekt zaliczeniowy — Cypress + TypeScript
-
-Projekt wykonany na potrzeby przedmiotu **Testy i kontrola jakości oprogramowania**.
+# Projekt zaliczeniowy — Testy i kontrola jakości oprogramowania - Szymon Koń 15931
 
 Testowana aplikacja: [Automation Exercise](https://www.automationexercise.com/)
 
-## Co zawiera projekt?
-
+# Co zawiera projekt?
 Projekt spełnia wymagania zaliczeniowe:
-
-- testy napisane w **Cypress + TypeScript**,
+- testy napisane w Cypress + TypeScript,
 - 11 scenariuszy testowych e2e,
 - minimum 2 własne komendy Cypress,
 - interfejsy TypeScript opisujące strukturę danych,
 - selektory zapisane w osobnych plikach,
-- skrypt do uruchamiania testów w trybie headless,
-- brak folderu `node_modules` w paczce `.zip`.
+- skrypt do uruchamiania testów w trybie headless
 
-## Scenariusze testowe
-
+# Scenariusze:
 1. Rejestracja nowego użytkownika.
 2. Logowanie poprawnymi danymi po wcześniejszej rejestracji.
 3. Próba logowania błędnymi danymi.
@@ -30,8 +24,7 @@ Projekt spełnia wymagania zaliczeniowe:
 10. Usunięcie produktu z koszyka.
 11. Wysłanie formularza Contact Us.
 
-## Struktura katalogów
-
+# Struktura katalogów
 ```txt
 cypress/
  ├── e2e/
@@ -53,33 +46,24 @@ cypress/
      └── testData.json
 ```
 
-## Własne komendy
-
+# Własne komendy
 W pliku `cypress/support/commands.ts` znajdują się własne komendy:
 
 ```ts
-cy.loginUser(user)
+cy.loginUser(user) - logowanie użytkownika na podstawie obiektu typu `User`,
 cy.registerUser(user)
-cy.addProductToCart(product)
+cy.addProductToCart(product) - dodanie produktu na podstawie obiektu typu `Product`.
 cy.submitContactForm(message)
 cy.clearCartIfNeeded()
 ```
 
-Najważniejsze dla wymagań projektu są m.in.:
-
-- `cy.loginUser(user)` — logowanie użytkownika na podstawie obiektu typu `User`,
-- `cy.addProductToCart(product)` — dodanie produktu na podstawie obiektu typu `Product`.
-
-## Interfejsy TypeScript
-
+# Interfejsy TypeScript
 Interfejsy znajdują się w pliku:
-
 ```txt
 cypress/support/types.ts
 ```
 
 Przykłady:
-
 ```ts
 export interface User {
   name: string
@@ -94,15 +78,18 @@ export interface Product {
 }
 ```
 
-## Instalacja
-
+# Instalacja
 Po rozpakowaniu projektu należy uruchomić:
 
 ```bash
 npm install
 ```
+następnie:
 
-## Uruchamianie testów
+```bash
+npx cypress install
+npx cypress open
+```
 
 Tryb interaktywny:
 
@@ -130,6 +117,6 @@ Linux/macOS:
 ./scripts/run-headless.sh
 ```
 
-## Informacja dla prowadzącego
+# Informacja dla prowadzącego
 
 Projekt nie zawiera folderu `node_modules`. Zależności należy pobrać komendą `npm install`.

@@ -1,3 +1,5 @@
+//pomocne selektory
+
 export const authSelectors = {
   loginTitle: '.login-form h2',
   loginEmailInput: 'input[data-qa="login-email"]',

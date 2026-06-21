@@ -22,7 +22,7 @@ describe('Produkty i wyszukiwarka', () => {
   })
 
   it('07. Otwiera szczegóły produktu i sprawdza podstawowe informacje', () => {
-    const product: Product = { id: 1, name: 'Blue Top', quantity: 1 }
+    const product: Product = { id: 1, name: 'Blue Top', quantity: 3 }
 
     cy.visit('/products')
     cy.get(productSelectors.viewProductLinkById(product.id)).click()
